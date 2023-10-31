@@ -38,7 +38,7 @@ public class Simulation : MonoBehaviour
                 continue;
             }
 
-            if (raceData[1 + (2*i), nextTimeStamp] == null) {
+            if (raceData[1 + (2*i), nextTimeStamp] == null || raceData[1 + (2*i), nextTimeStamp] == "") {
                 carsFinished.Add(car);
                 continue;
             }
